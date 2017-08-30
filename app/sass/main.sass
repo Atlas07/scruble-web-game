@@ -1,0 +1,146 @@
+$output-bourbon-deprecation-warnings: false //Ждём обновления node-bourbon до 5-й версии
+
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #ecf0f1
+  	font-family: sans-serif
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+td
+  max-width: 35px
+  max-height: 35px
+  background: #e0e0b0
+  text-align: center
+  vertical-align: middle
+
+ul
+  margin: 0
+  padding: 0
+  list-style-type: none
+  // display: inline-block
+
+li
+  margin: 0
+  padding: 0
+  list-style-type: none
+  width: 35px
+  height: 35px
+  background: #e0e0b0
+  text-align: center
+  line-height: 35px
+  color: black
+  font-size: 25px
+  border-radius: 3px
+
+.top-name
+	text-transform: uppercase
+	font-weight: 100
+	text-align: center
+
+.green
+  border: 1px solid green
+
+#player1, 
+#player2
+	font-size: 20px
+
+#player1
+	float: right
+#player2
+	float: left
+
+
+.player1
+	border: 1px solid green
+.player2
+	border: 1px solid red
+
+.buttons1
+	float: right
+
+.player-number
+	font-weight: bold
+	font-size: 23px
+
+.player-block1
+	color: #853247
+	margin: 0 auto
+	text-align: center
+	margin-top:	15px
+
+.player-block2
+	color: #397285
+	margin: 0 auto
+	text-align: center
+	margin-top: 15px
+
+
+table
+	text-align: center
+	margin: 0 auto
+
+.buttons1 button,
+.buttons2 button
+	display: block
+	width: 116px
+	height: 35px
+	border: 0
+	color: #fafafa
+	background-color: #f1c40f
+	border-radius: 5px
+	margin-bottom: 3px
+	font-size: 18px
+	font-weight: bold
+
+.player1,
+.player2
+	margin-bottom: 4px
+
+.play-color1
+	background-color: #853247 !important
+.play-color2 
+	background-color: #397285 !important
+ 
+@import "media" // Всегда в конце
+
+
